@@ -23,6 +23,7 @@ func walkBFS(graph GraphAdjacencyMatrix, source, needle int) []int {
 		curr := queue.Dequeue().(int)
 
 		if curr == needle {
+			fmt.Println("got here!!!!!!!")
 			break
 		}
 		adjacencyRow := graph[curr]

@@ -9,13 +9,12 @@ import (
 
 func TestDFS(t *testing.T) {
 	graph := generateGraph()
-	// res := graphs.DFSAdjancyList(graph, 0, 6)
-	// expectedRes := []int{0, 1, 4, 5, 6}
+	res := graphs.DFSAdjancyList(graph, 0, 6)
+	expectedRes := []int{0, 1, 4, 5, 6}
 
-	// assert.Equal(t, expectedRes, res)
+	assert.Equal(t, expectedRes, res)
 
-	assert.Equal(t, []int{}, graphs.DFSAdjancyList(graph, 6, 0))
-
+	// assert.Equal(t, []int{}, graphs.DFSAdjancyList(graph, 6, 0))
 }
 
 func generateGraph() graphs.GraphAdjacencyList {

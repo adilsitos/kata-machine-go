@@ -24,6 +24,7 @@ func walk(graph GraphAdjacencyList, curr, needle int, visited []bool) bool {
 	}
 
 	// post
+	// this pop just happens if we never found the value
 	path = path[:len(path)-1]
 	return false
 

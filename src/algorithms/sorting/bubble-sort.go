@@ -1,4 +1,4 @@
-package algorithms
+package sorting
 
 // the greater element stays at the end
 func BubbleSort(arr []int) []int {

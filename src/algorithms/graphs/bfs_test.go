@@ -22,4 +22,5 @@ func TestBFSOnAdjacencyMatrix(t *testing.T) {
 
 	assert.Equal(t, expected, graphs.BFSOnAdjancyMatrix(matrix, 0, 6))
 	assert.Equal(t, []int{}, graphs.BFSOnAdjancyMatrix(matrix, 6, 0))
+	assert.Equal(t, []int{}, graphs.BFSOnAdjancyMatrix(matrix, 0, 0))
 }
